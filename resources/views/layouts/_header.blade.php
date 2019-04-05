@@ -22,7 +22,7 @@
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}<span class="caret"></span></a>
 		          <ul class="dropdown-menu">
 		            <li><a class="dropdown-item" href="{{ route('users.show', Auth::user()) }}">个人中心</a></li>
-		            <li><a class="dropdown-item" href="#">编辑资料</a></li>
+		            <li><a class="dropdown-item" href="{{route('users.edit', Auth::user())}}">编辑资料</a></li>
 		            <li>
 		            	<a class="dropdown-item" id="logout" href="#">
 			              <form action="{{ route('logout') }}" method="POST">
