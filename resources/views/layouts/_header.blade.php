@@ -16,7 +16,7 @@
 
 	      <ul class="nav navbar-nav navbar-right">
 	        @if (Auth::check())
-		        <li class="nav-item"><a class="nav-link" href="#">当前用户</a></li>
+		        <li class="nav-item"><a class="nav-link" href="{{ route('users.index') }}">当前用户</a></li>
 
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}<span class="caret"></span></a>
