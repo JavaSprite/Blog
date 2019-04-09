@@ -1,17 +1,13 @@
 <?php
-
 namespace App\Models;
-
 use Illuminate\Database\Eloquent\Model;
 
 class Status extends Model
 {
-    //
-	protected $fillable = ['content'];
-
+    protected $fillable = ['content'];
     
     public function user()
     {
-    	$this->belongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
 }
